@@ -1,44 +1,48 @@
-import './Home.css';
-import hero from '../assets/hero-img.png'
+import "./Home.css";
+// To Add Assets
+import hero from "../assets/hero-img.png"; 
+  //For Bootstrap 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
-      <body>
-        
-      
-    
-    <div className="nav-bar">
-      <ul>
-        <li className="logo">New Arsha</li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Team</li>
-        <li>Pricing</li>
-        <li>Blog</li>
-        <li>Dropdown</li>
-        <li>Contact</li>
-        <li><button className='home-btn'>Get Started</button></li>
-      </ul>
-    </div>
-    <section className='hero'>
-      <div className="hero-container">
-        <div className="row">
-          <div className="col-6">
-            <h1>Better Solutions For Your Business</h1>
-            <h3>We are team of talented designers making websites with Bootstrap</h3>
-            <button>Get Started</button>
-          </div>
-          <div className="col-6">
-            <img src={hero} alt="hero-Img" />
+    <div id="root">
+      <div className="nav-bar">
+        <ul>
+          <li className="logo">New Arsha</li>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Team</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Dropdown</li>
+          <li>Contact</li>
+          <li>
+            <button className="home-btn">Get Started</button>
+          </li>
+        </ul>
+      </div>
+      <section className="hero">
+        <div className="container-fluid">
+          <div className="row gy-4 d-flex gap-5">
+            <div className="col-lg-6 col-md-4 col-12" id="hero-text">
+              <p className="fw-bolder text-white">Better Solutions For Your Business</p>
+              <span>
+                We are team of talented designers making websites with Bootstrap
+              </span>
+              <br/>
+              <button className="hero-Tbtn">Get Started</button>
+            </div>
+            <div className="col-lg-6 col-md-4 col-12">
+              <img src={hero} alt="hero-Img" id="hero-image" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    </body>
-     );
+      </section>
+    </div>
+  );
 };
 
 export default Home;
