@@ -1,0 +1,51 @@
+.nav-bar {
+  background-color: #3d4d6a;
+  width: 100%;
+  height:5rem;
+  position: fixed;
+  z-index: 9999;
+ cursor: pointer;
+ margin: 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-bar li {
+  color: white;
+  font-weight: 400;
+}
+.nav-bar li:hover{
+  color: #1eb0e5;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 700px;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.home-btn { position: relative;
+  background-color: #40c0ef;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+.home-btn:hover{
+  background-color: #28b9ee;
+}
+/* Hero Section */
+.hero{
+  padding-top: 10rem;
+
+}
