@@ -50,7 +50,6 @@
    height: auto;
 }
 
-/* SUB NOT WORKING YET DON'T OVERCOMPENSATE IT  */
 /* Deep Dropdown */
 .sub-menu{    
     padding: 1rem;
@@ -58,17 +57,31 @@
     background-color: white;
     display: none;
     position: absolute;
-    z-index: 1000;
+    z-index: 1001;
     border-radius: 4px;
-      
+    right: 110%; 
+    top: 0;
+    width: 12rem;
+    margin-bottom: 1rem;
 } 
 
 .sub-drop:hover .sub-menu{    
     display: block; 
 }
-/* Prevent main dropdown hover from affecting sub-menu */
-.nav-item li:not(.sub-drop):hover ~ .sub-drop .sub-menu {
+
+/* Reset sub-menu display when hovering on main dropdown but not on sub-drop */
+.nav-item.dropdown:hover .sub-menu {
     display: none;
+}
+
+/* But allow it to show when hovering on sub-drop specifically */
+.nav-item.dropdown .sub-drop:hover .sub-menu {
+    display: block;
+}
+
+
+.sub-drop {
+    position: relative;
 }
 
 .nav-bar li:hover {
