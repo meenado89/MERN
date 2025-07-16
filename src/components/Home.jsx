@@ -1,8 +1,8 @@
 import "./Home.css";
 // To Add Assets
-import hero from "../assets/hero-img.png"; 
-  //For Bootstrap 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import hero from "../assets/hero-img.png";
+//For Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
   return (
@@ -17,7 +17,25 @@ const Home = () => {
           <li>Team</li>
           <li>Pricing</li>
           <li>Blog</li>
-          <li>Dropdown</li>
+          <li className="nav-item dropdown">
+            Dropdown
+            <ol className="Homedrop-menu">
+              <li>Dropdown 1</li>
+              <li>Dropdown 2</li>
+              <li className="sub-drop">Deep Dropdown
+                <ul className="sub-menu">
+                  <li className="sub-list">Deep Dropdown 1</li>
+                  <li className="sub-list">Deep Dropdown 2</li>
+                  <li className="sub-list">Deep Dropdown 3</li>
+                  <li className="sub-list">Deep Dropdown 4</li>
+                  <li className="sub-list">Deep Dropdown 5</li>
+                </ul>
+              </li>
+              <li>Dropdown 3</li>
+              <li>Dropdown 4</li>
+            </ol>
+          </li>
+
           <li>Contact</li>
           <li>
             <button className="home-btn">Get Started</button>
@@ -28,11 +46,13 @@ const Home = () => {
         <div className="container-fluid">
           <div className="row gy-4 d-flex gap-5">
             <div className="col-lg-6 col-md-4 col-12" id="hero-text">
-              <p className="fw-bolder text-white">Better Solutions For Your Business</p>
+              <p className="fw-bolder text-white">
+                Better Solutions For Your Business
+              </p>
               <span>
                 We are team of talented designers making websites with Bootstrap
               </span>
-              <br/>
+              <br />
               <button className="hero-Tbtn">Get Started</button>
             </div>
             <div className="col-lg-6 col-md-4 col-12">
