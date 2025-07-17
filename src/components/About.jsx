@@ -1,10 +1,8 @@
-// import Hero from "./Hero";
-import Home from "./Home";
 
 const About = () => {
   return (
     <>
-      <Home />
+     
       <div className="about-container">
         <h1 className=" ht text-center pt-5">About Us</h1>
         <section className="about">
@@ -44,3 +42,7 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
