@@ -3,6 +3,8 @@ import "./Home.css";
 import hero from "../assets/hero-img.png";
 //For Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+import {Link} from 'react-router-dom'
+// import Hero from "./Hero";
 
 const Home = () => {
   return (
@@ -10,9 +12,11 @@ const Home = () => {
       <div className="nav-bar">
         <ul>
           <li className="logo">New Arsha</li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/services">Services</Link></li>
           <li>Portfolio</li>
           <li>Team</li>
           <li>Pricing</li>
@@ -22,7 +26,8 @@ const Home = () => {
             <ol className="Homedrop-menu">
               <li className="dm">Dropdown 1</li>
               <li className="dm">Dropdown 2</li>
-              <li className="sub-drop dm">Deep Dropdown
+              <li className="sub-drop dm">
+                Deep Dropdown
                 <ul className="sub-menu">
                   <li className="sub-list">Deep Dropdown 1</li>
                   <li className="sub-list">Deep Dropdown 2</li>

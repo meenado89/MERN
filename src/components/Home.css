@@ -1,3 +1,11 @@
+a{
+  color: white !important;
+  text-decoration: none !important;
+}
+a:hover{
+  color: #1eb0e5 !important;
+}
+
 /* Nav-Bar */
 .nav-bar {
   background-color: #415e91;
@@ -10,6 +18,7 @@
   margin: 0;
   top: 0;
   left: 0;
+  align-items: center;
 }
 
 /* Nav UL */
@@ -85,15 +94,15 @@
 .sub-drop {
   position: relative;
 }
-/* Nav-Bar Hover */
-.nav-bar li:hover {
+/* Nav-Bar Hover updated in a tag don't need it now */ 
+/* .nav-bar li:hover {
   color: #1eb0e5;
-}
+} */
 
 /* But exclude logo specifically */
-.nav-bar li.logo:hover {
+/* .nav-bar li.logo:hover {
   color: white; 
-}
+} */
 
 
 /* Arsha Text */
@@ -172,4 +181,58 @@
 /* Hero Text Button */
 .hero-Tbtn:hover {
   background-color: #26a7d6;
+}
+
+/* ABOUT */
+/* heading  */
+.ht{
+  color: #37517e;
+  font-size: 35px;
+  font-weight: 700;
+ }
+/* .ht::before{
+  position: absolute;
+  content: "";
+  width: 155px;
+  height: 1px;
+  background-color: rgb(104, 102, 102);
+  top: 100px;
+  right:610px;
+}
+.ht::after{
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 5px;
+  background-color: rgb(51, 201, 255);
+  top: 98px;
+  right:650px;
+} */
+.Ht-a, .Ht-b{
+  font-size: 18px;
+  color: rgb(96, 96, 96);
+  
+}
+#about-text li{
+font-size: 18px;
+  color: rgb(96, 96, 96);
+  list-style-type: none;
+}
+.about-btn{
+  position: relative;
+  border:2px solid #40c0ef;
+  color:#40c0ef;
+  background-color: transparent;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 4rem;
+  top: 1.5rem;
+  right: 4rem;
+  width: 9rem;
+ 
+}
+.about-btn:hover{
+  background-color: #1eb0e5;
+  color: white;
 }
