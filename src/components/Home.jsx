@@ -20,9 +20,9 @@ const Home = () => {
           <li className="nav-item dropdown">
             Dropdown
             <ol className="Homedrop-menu">
-              <li>Dropdown 1</li>
-              <li>Dropdown 2</li>
-              <li className="sub-drop">Deep Dropdown
+              <li className="dm">Dropdown 1</li>
+              <li className="dm">Dropdown 2</li>
+              <li className="sub-drop dm">Deep Dropdown
                 <ul className="sub-menu">
                   <li className="sub-list">Deep Dropdown 1</li>
                   <li className="sub-list">Deep Dropdown 2</li>
@@ -31,8 +31,8 @@ const Home = () => {
                   <li className="sub-list">Deep Dropdown 5</li>
                 </ul>
               </li>
-              <li>Dropdown 3</li>
-              <li>Dropdown 4</li>
+              <li className="dm">Dropdown 3</li>
+              <li className="dm">Dropdown 4</li>
             </ol>
           </li>
 

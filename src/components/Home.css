@@ -46,8 +46,9 @@
 .Homedrop-menu li {
   color: black;
   font-weight: 400;
-  width: 8rem;
-   height: auto;
+  width: 9rem;
+  height: auto;
+  margin-bottom: 12px;
 }
 
 /* Deep Dropdown */
@@ -69,16 +70,14 @@
     display: block; 
 }
 
-/* Reset sub-menu display when hovering on main dropdown but not on sub-drop */
 .nav-item.dropdown:hover .sub-menu {
     display: none;
 }
 
-/* But allow it to show when hovering on sub-drop specifically */
+/* Allowing sub-menu to show when hovering on sub-drop specifically */
 .nav-item.dropdown .sub-drop:hover .sub-menu {
     display: block;
 }
-
 
 .sub-drop {
     position: relative;
