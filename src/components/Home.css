@@ -30,7 +30,7 @@
 
 /* Main DropDown */
 
-.Homedrop-menu{
+.Homedrop-menu {
   padding: 1rem;
   list-style: none;
   background-color: white;
@@ -38,11 +38,13 @@
   position: absolute;
   z-index: 1000;
   border-radius: 4px;
- 
+
 }
+
 .nav-item.dropdown:hover .Homedrop-menu {
   display: block;
 }
+
 .Homedrop-menu li {
   color: black;
   font-weight: 400;
@@ -52,40 +54,47 @@
 }
 
 /* Deep Dropdown */
-.sub-menu{    
-    padding: 1rem;
-    list-style: none;
-    background-color: white;
-    display: none;
-    position: absolute;
-    z-index: 1001;
-    border-radius: 4px;
-    right: 110%; 
-    top: 0;
-    width: 12rem;
-    margin-bottom: 1rem;
-} 
+.sub-menu {
+  padding: 1rem;
+  list-style: none;
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  border-radius: 4px;
+  right: 110%;
+  top: 0;
+  width: 12rem;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 8px solid rgb(165, 162, 162);
+}
 
-.sub-drop:hover .sub-menu{    
-    display: block; 
+.sub-drop:hover .sub-menu {
+  display: block;
 }
 
 .nav-item.dropdown:hover .sub-menu {
-    display: none;
+  display: none;
 }
 
 /* Allowing sub-menu to show when hovering on sub-drop specifically */
 .nav-item.dropdown .sub-drop:hover .sub-menu {
-    display: block;
+  display: block;
 }
 
 .sub-drop {
-    position: relative;
+  position: relative;
 }
-
+/* Nav-Bar Hover */
 .nav-bar li:hover {
   color: #1eb0e5;
 }
+
+/* But exclude logo specifically */
+.nav-bar li.logo:hover {
+  color: white; 
+}
+
 
 /* Arsha Text */
 .logo {
