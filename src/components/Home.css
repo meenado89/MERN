@@ -245,3 +245,59 @@ font-size: 18px;
   background-color: #1eb0e5;
   color: white;
 }
+
+/* SERVICES */
+.servicemain-container{
+  padding: 4rem;
+   background-color: rgba(243, 243, 243, 0.8);
+}
+
+.service-header{
+  text-align: center;
+  padding-top: 2rem;
+  color: #37517e;
+  padding-bottom: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+ 
+  padding: 10px;
+}
+
+.service-card {
+ background-color: rgba(255, 255, 255, 0.8);
+ text-align: center;
+ padding: 20px 0;
+ font-size: 30px;
+ height:16rem;
+ width: 16rem;
+ transition: all 0.3s ease-out;
+ padding: 1rem;
+ text-wrap: pretty;
+}
+/* ADD ICON THEN FIX PADDING */
+.main-icon{
+  padding: 2rem;
+}
+.sevice-heading{
+  color: #37517e;
+  text-align: left;
+}
+.service-text{
+  font-size: 16px;
+  text-align: left;
+  
+}
+/* Moves Card */
+.service-card:hover{
+  transform: translateY(-14px);
+ 
+}
+/* Change color of icon and heading when card hover */
+.service-card:hover .main-icon,
+.service-card:hover .sevice-heading {
+  color: #28b9ee;
+}
+
