@@ -7,9 +7,15 @@ const Navbar = () => {
     <nav className="nav-bar">
       <ul>
         <li className="logo">New Arsha</li>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/services">Services</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
         <li>Portfolio</li>
         <li>Team</li>
         <li>Pricing</li>
@@ -33,8 +39,13 @@ const Navbar = () => {
             <li className="dm">Dropdown 4</li>
           </ol>
         </li>
-        <li>Contact</li>
-        <li><button className="home-btn">Get Started</button></li>
+
+        <li>
+          <Link to="/Contact">Contact</Link>
+        </li>
+        <li>
+          <button className="home-btn">Get Started</button>
+        </li>
       </ul>
     </nav>
   );

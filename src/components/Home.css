@@ -342,3 +342,35 @@ a:hover {
   color: #37517e;
   font-weight: 700;
 }
+/* CONTACT */
+.contact-container{
+  margin-left: 15%;
+ 
+}
+.af-heading h2{
+  color: #37517e;
+  font-weight: 700;
+}
+.map{
+  display: flex;
+  justify-content: center;
+}
+.address li{
+  list-style-type: none;
+}
+.address ul{
+  padding-left: 4rem;
+}
+.address{
+  background-color: aliceblue;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  
+}
+.form, 
+.address{
+  height: 36rem;
+  box-shadow: 0 8px 8px  rgb(221, 220, 220);
+}
+
+ 
