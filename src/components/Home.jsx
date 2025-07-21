@@ -5,7 +5,7 @@ import hero from "../assets/hero-img.png";
 //For Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Link} from 'react-router-dom'
-// import Hero from "./Hero";
+
 
 const Home = () => {
   return (
