@@ -391,6 +391,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-top: 3px solid #28b9ee;
+  border-bottom:3px solid #28b9ee;
 }
 
 
@@ -553,4 +555,8 @@ p {
  -moz-transition: all 0.90 ease;
  -ms-transition: all 0.90 ease;
  -o-transition: all 0.90 ease;
+}
+.featured{
+
+  border-top: 4px solid #28b9ee;
 }

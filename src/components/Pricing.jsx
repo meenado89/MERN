@@ -52,9 +52,9 @@ const Pricing = () => {
         </div>
 
         {/* CARD 2 */}
-        <div className="price-cards">
+        <div className="price-cards featured">
           
-          <div class="pricing-item featured p-4">
+          <div class="pricing-item  p-4">
             <h5>Business Plan</h5>
             <p>
               <sup>$</sup>29<span> / month</span>
