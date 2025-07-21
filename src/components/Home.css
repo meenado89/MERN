@@ -308,7 +308,10 @@ a:hover {
 /* Moves Card */
 .service-card:hover {
   transform: translateY(-14px);
-
+  -webkit-transform: translateY(-14px);
+  -moz-transform: translateY(-14px);
+  -ms-transform: translateY(-14px);
+  -o-transform: translateY(-14px);
 }
 
 /* Change color of icon and heading when card hover */
@@ -395,12 +398,59 @@ a:hover {
  margin-top: 1rem;
  transform: translateX(150%);
  font-size: 12px;
- 
+ -webkit-transform: translateX(150%);
+ -moz-transform: translateX(150%);
+ -ms-transform: translateX(150%);
+ -o-transform: translateX(150%);
 }
 .contact-btn:hover{
   background-color: #3cc6f9 !important;
 }
+  /* TEAM */
+  .Theadding{
+    color: #37517e;
+  }
+     .team-container{     
+     padding-left: clamp(8rem, 5vw, 5rem);
+  padding-right: clamp(8rem, 5vw, 5rem);
+  padding-top: clamp(1rem, 4vw, 3rem);
+  padding-bottom: clamp(1rem, 4vw, 3rem);
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+     }
+.Member-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ #Walter-Img,
+#william-Img,
+#Amanda-Img,
+#Sara-Img {
+  width: 100%;
+  max-width:200px;
+  height: auto;
+  border-radius:50%;
+  padding: 1rem;
+ 
+}
 
+
+.Team-Name{
+  color: #37517e;
+font-weight: 700;
+}
+.card{
+  box-shadow: 2px 2px 8px 0.7px rgb(238, 238, 238);
+  transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+}
+.card:hover{ transform: translateY(-4%); -webkit-transform: translateY(-4%); -moz-transform: translateY(-4%); -ms-transform: translateY(-4%); -o-transform: translateY(-4%);
+}
 
 
  
