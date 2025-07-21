@@ -22,15 +22,15 @@ const Contact = () => {
               <div className="address">
                 <ul>
                   <li>
-                    <h3>Address</h3>
+                    <h5>Address</h5>
                     <span>A 108 Adam Street, New York, NY 535022</span>
                   </li>
                   <li>
-                    <h3>Call Us</h3>
+                    <h5>Call Us</h5>
                     <span>+1 5589 554488 55</span>
                   </li>
                   <li>
-                    <h3>Email Us</h3>
+                    <h5>Email Us</h5>
                     <span>info@example.com</span>
                   </li>
                 </ul>
@@ -105,7 +105,7 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <button type="submit" className="btn btn-primary w-25">
+                  <button type="submit" className="contact-btn  w-25">
                     Send Message
                   </button>
                 </form>

@@ -14,11 +14,11 @@ const Footer = () => {
           <h1>ARSHA</h1>
             <li>A108 Adam Street</li>
             <li>New York, NY 535022</li>
-            <li><b>Phone:</b>
+            <li><b className="text-dark">Phone:</b>
             +1 5589 55488 55
             </li>
             <li>
-              <b>Email:</b>
+              <b className="text-dark">Email:</b>
               info@example.com
             </li>
         </ul>
