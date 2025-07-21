@@ -18,7 +18,7 @@ const Navbar = () => {
         </li>
         <li>Portfolio</li>
         <li><Link to="/Team">Team</Link></li>
-        <li>Pricing</li>
+        <li><Link to="/Pricing">Pricing</Link></li>
         <li>Blog</li>
         <li className="nav-item dropdown">
           Dropdown
