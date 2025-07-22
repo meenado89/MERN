@@ -13,18 +13,21 @@ const About = () => {
       setcolor("blue")
     }
   }
-  // MODE 
-  const [isDark, setIsDark] = useState(false);
-
+  // DARK/LIGHT... MODE 
 const theamchange = () => {
-  // Toggle state
-  const newTheme = !isDark;
-  setIsDark(newTheme);
-
-  // Also update DOM manually
-  document.body.style.backgroundColor = newTheme ? "black" : "white";
-  document.body.style.color = newTheme ? "white" : "black";
+  if (color === "white") {
+    setcolor("black");
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    
+  } else {
+    setcolor("white");
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+   
+  }
 };
+
 
 
   return (
@@ -75,19 +78,13 @@ const theamchange = () => {
       <h1 style={{color:color}}>my first website</h1>
       <button onClick={changecolor}>change color</button>
 
-      <button
-  onClick={theamchange}
-  className="mode"
-  style={{
-    backgroundColor: isDark ? "black" : "#d0d0d0ff",
-  }}
->
-  <box-icon
-    name={isDark ? "moon" : "sun"}
-    type="solid"
-    color="#ffffff"
-    rotate={isDark ? undefined : "270"}
-  ></box-icon>
+      <button onClick={theamchange} className="mode">
+        {
+          color==="white"? <box-icon name='moon' type='solid' color='#ffffff' ></box-icon>:
+           <box-icon name='sun' type='solid' color='#ffffff' ></box-icon>
+        }
+
+ 
 </button>
 
     </>
