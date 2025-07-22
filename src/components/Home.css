@@ -392,7 +392,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   border-top: 3px solid #28b9ee;
-  border-bottom:3px solid #28b9ee;
+  border-bottom: 3px solid #28b9ee;
 }
 
 
@@ -493,7 +493,7 @@ p {
   padding-left: clamp(6rem, 6vw, 8rem);
   padding-right: clamp(6rem, 6vw, 8rem);
   padding-top: 3rem;
-  gap: clamp(0.1rem, 4vw,3rem);
+  gap: clamp(0.1rem, 4vw, 3rem);
   justify-items: center;
   align-items: center;
 
@@ -503,16 +503,18 @@ p {
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
   box-shadow: 2px 2px 14px 2px rgb(222, 222, 222);
-  
+
 }
-.price-cards{
+
+.price-cards {
   padding-top: clamp(0.5rem, 3vw, 1rem);
- }
+}
+
 .pricing-item li {
   list-style-type: none;
- margin-bottom:clamp(0.1rem, 4vw,1rem) ;
- font-size: 18px;
- color: rgb(153, 152, 152);
+  margin-bottom: clamp(0.1rem, 4vw, 1rem);
+  font-size: 18px;
+  color: rgb(153, 152, 152);
 }
 
 .pricing-item h5 {
@@ -531,32 +533,65 @@ p {
   font-size: 24px;
   font-weight: 400;
 }
-.buy-btn{
+
+.buy-btn {
   background-color: #ffffff;
   width: clamp(4rem, 10vw, 8rem);
-  height:clamp(1rem, 10vw, 2.5rem) ;
+  height: clamp(1rem, 10vw, 2.5rem);
   border-radius: 25px;
   color: #1eb0e5;
-  border:2px solid #1eb0e5;
+  border: 2px solid #1eb0e5;
   font-weight: 600;
-  }
-  .buy-btn:hover{
-    background-color: #1eb0e5;
-    color: white;
-  }
-.featured-btn{
- background-color: #1eb0e5;
- width: clamp(4rem, 10vw, 8rem);
- height:clamp(1rem, 10vw, 2.5rem) ;
- border-radius: 25px;
- color: #ffffff;
- transition: all 0.90 ease;
- -webkit-transition: all 0.90 ease;
- -moz-transition: all 0.90 ease;
- -ms-transition: all 0.90 ease;
- -o-transition: all 0.90 ease;
 }
-.featured{
+
+.buy-btn:hover {
+  background-color: #1eb0e5;
+  color: white;
+}
+
+.featured-btn {
+  background-color: #1eb0e5;
+  width: clamp(4rem, 10vw, 8rem);
+  height: clamp(1rem, 10vw, 2.5rem);
+  border-radius: 25px;
+  color: #ffffff;
+  transition: all 0.90 ease;
+  -webkit-transition: all 0.90 ease;
+  -moz-transition: all 0.90 ease;
+  -ms-transition: all 0.90 ease;
+  -o-transition: all 0.90 ease;
+}
+
+.featured {
 
   border-top: 4px solid #28b9ee;
+}
+
+/* BLOG */
+.blog-Main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.blog-tittle {
+  padding-top: 3rem;
+  background-color: #b5b4b4;
+
+
+}
+
+/* DARK THEAM */
+
+.mode {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  right: 0%;
+  top: 14%;
+  position: fixed;
+  border: none;
 }

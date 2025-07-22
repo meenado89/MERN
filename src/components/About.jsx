@@ -1,8 +1,40 @@
+import Home from "./Home";
+import hero from "../assets/blog-post-1.webp";
+import { useState } from "react";
+import 'boxicons';
 
 const About = () => {
+  const [count, setcount] = useState(1);
+  const [color, setcolor] = useState("blue");
+  const changecolor=()=>{
+    if(color==="blue"){
+      setcolor("red")
+    }else{
+      setcolor("blue")
+    }
+  }
+  // MODE 
+  const [isDark, setIsDark] = useState(false);
+
+const theamchange = () => {
+  // Toggle state
+  const newTheme = !isDark;
+  setIsDark(newTheme);
+
+  // Also update DOM manually
+  document.body.style.backgroundColor = newTheme ? "black" : "white";
+  document.body.style.color = newTheme ? "white" : "black";
+};
+
+
   return (
     <>
-     
+    
+      <Home
+        text={" hi this is about page text"}
+        subtext={"this is subtext"}
+        image={hero}
+      />
       <div className="about-container">
         <h1 className=" ht text-center pt-5">About Us</h1>
         <section className="about">
@@ -37,12 +69,29 @@ const About = () => {
           </div>
         </section>
       </div>
+      <button onClick={() => setcount(count + 1)}>+</button>
+      <p>{count}</p>
+      <button onClick={() => setcount(count - 1)}>-</button>
+      <h1 style={{color:color}}>my first website</h1>
+      <button onClick={changecolor}>change color</button>
+
+      <button
+  onClick={theamchange}
+  className="mode"
+  style={{
+    backgroundColor: isDark ? "black" : "#d0d0d0ff",
+  }}
+>
+  <box-icon
+    name={isDark ? "moon" : "sun"}
+    type="solid"
+    color="#ffffff"
+    rotate={isDark ? undefined : "270"}
+  ></box-icon>
+</button>
+
     </>
   );
 };
 
 export default About;
-
-
-
-

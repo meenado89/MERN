@@ -19,7 +19,7 @@ const Navbar = () => {
         <li>Portfolio</li>
         <li><Link to="/Team">Team</Link></li>
         <li><Link to="/Pricing">Pricing</Link></li>
-        <li>Blog</li>
+        <li><Link to="/Blog">Blog</Link></li>
         <li className="nav-item dropdown">
           Dropdown
           <ol className="Homedrop-menu">

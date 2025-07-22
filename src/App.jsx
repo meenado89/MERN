@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Team from "./components/Team";
 import { Routes, Route } from "react-router-dom";
 import Pricing from "./components/Pricing";
+import Blog from "./components/Blog";
+import 'boxicons';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Pricing" element={<Pricing />} />
+         <Route path="/Blog" element={<Blog />} />
       </Routes>
       <Footer />
     </>
