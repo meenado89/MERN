@@ -11,7 +11,7 @@ const Blog = () =>{
         <section className="blog-Main">
             <div className="blog-tittle">
                 <ol>
-                   <li><Link to="./Home">Home</Link></li>
+                   <li><Link to="/">Home</Link></li>
                     {/* ::Before */}/
                     <li>Blog</li>
                 </ol>
