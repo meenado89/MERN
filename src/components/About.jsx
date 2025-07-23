@@ -5,26 +5,31 @@ import 'boxicons';
 
 const About = () => {
   const [count, setcount] = useState(1);
-  const [color, setcolor] = useState("blue");
-  const changecolor=()=>{
-    if(color==="blue"){
-      setcolor("red")
-    }else{
-      setcolor("blue")
-    }
-  }
+  const [color, setcolor] = useState("white");
+  
   // DARK/LIGHT... MODE 
+// const theamchange = () => {
+//   if (color === "white") {
+//     setcolor("black")
+//     document.body.style.backgroundColor="black"
+//   } else {
+//     setcolor("white")
+//     document.body.style.backgroundColor ="white";
+//   }
+// };
+const [bgColor, setBgColor] = useState("white");
+
 const theamchange = () => {
-  if (color === "white") {
-    setcolor("black");
+  if (bgColor === "white") {
+    setBgColor("black");
+    setcolor("white");
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
-    
   } else {
-    setcolor("white");
+    setBgColor("white");
+    setcolor("black");
     document.body.style.backgroundColor = "white";
     document.body.style.color = "black";
-   
   }
 };
 
@@ -34,9 +39,10 @@ const theamchange = () => {
     <>
     
       <Home
-        text={" hi this is about page text"}
-        subtext={"this is subtext"}
+        text={" Better Solutions For Your Business"}
+        subtext={" We are team of talented designers making websites with Bootstrap"}
         image={hero}
+        btntext={"Get started"}
       />
       <div className="about-container">
         <h1 className=" ht text-center pt-5">About Us</h1>
@@ -75,8 +81,9 @@ const theamchange = () => {
       <button onClick={() => setcount(count + 1)}>+</button>
       <p>{count}</p>
       <button onClick={() => setcount(count - 1)}>-</button>
-      <h1 style={{color:color}}>my first website</h1>
-      <button onClick={changecolor}>change color</button>
+      <h1 style={{ color: color ==="white" ? "black" : "white" }}>my first website</h1>
+
+      <button>change color</button>
 
       <button onClick={theamchange} className="mode">
         {

@@ -262,11 +262,33 @@ a:hover {
   background-color: rgba(243, 243, 243, 0.8);
 }
 
+
+/* SIGN IN FORM IN HERO PAGE */
+.SignIn{
+  background-color: #415e91;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.form-container{position: relative;
+  align-content: center;
+  justify-items: center; 
+  color: white;
+}
+
 .service-header {
   text-align: center;
   padding-top: 2rem;
   color: #37517e;
   padding-bottom: 3rem;
+}
+.visible{position: relative;
+  left: 220px;
+  bottom:35px;
+}
+.showbtn{
+width: 35px;
+background-color: white;
+border: none;
 }
 
 .grid-container {

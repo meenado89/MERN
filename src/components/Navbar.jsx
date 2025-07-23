@@ -47,6 +47,7 @@ const Navbar = () => {
           <button className="home-btn">Get Started</button>
         </li>
       </ul>
+      
     </nav>
   );
 };
