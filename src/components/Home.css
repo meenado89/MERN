@@ -617,3 +617,19 @@ p {
   position: fixed;
   border: none;
 }
+
+
+/* BLOG */
+.blog-tittle ol{
+  display: flex;
+  gap: 1rem;
+  
+}
+/* .blog-tittle::before{
+  position: absolute;
+  content: "";
+
+} */
+.blog-tittle li{ 
+  list-style-type: none;
+}

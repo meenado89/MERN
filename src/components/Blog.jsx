@@ -3,14 +3,16 @@ import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'boxicons';
 
+import { Link } from "react-router-dom";
+
 const Blog = () =>{
     return(
         <div className="blog-section">
         <section className="blog-Main">
             <div className="blog-tittle">
                 <ol>
-                    <li>Home</li>
-                    {/* ::Before */}
+                   <li><Link to="./Home">Home</Link></li>
+                    {/* ::Before */}/
                     <li>Blog</li>
                 </ol>
             </div>
