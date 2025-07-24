@@ -1,9 +1,20 @@
 import "./Home.css";
 // For Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  // ALERT+NAVIGATE
+const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Message Sent");
+    navigate("/");
+  };
+ 
+
   return (
     <section className="addres-form ">
       <div className="container-fluid">
@@ -51,37 +62,37 @@ const Contact = () => {
             </div>
 
             {/* Right Side: Contact Form */}
-            
+
             <div className=" form col-12 col-md-6">
               <div className="form-container p-4 ">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row">
-                    <div className="mb-3 col-6">
-                    <label htmlFor="name-field" className="form-label">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name-field"
-                      name="name"
-                      className="form-control"
-                    />
+                    <div className="mb-3 col-6 text-dark">
+                      <label htmlFor="name-field" className="form-label">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name-field"
+                        name="name"
+                        className="form-control"
+                      />
+                    </div>
+
+                    <div className="mb-3 col-6 text-dark">
+                      <label htmlFor="email-field" className="form-label">
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email-field"
+                        name="email"
+                        className="form-control"
+                      />
+                    </div>
                   </div>
 
-                  <div className="mb-3 col-6">
-                    <label htmlFor="email-field" className="form-label">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email-field"
-                      name="email"
-                      className="form-control"
-                    />
-                  </div>
-                  </div>
-
-                  <div className="mb-3 col-12">
+                  <div className="mb-3 col-12 text-dark">
                     <label htmlFor="subject" className="form-label">
                       Subject
                     </label>
@@ -93,7 +104,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="mb-3 col-12">
+                  <div className="mb-3 col-12 text-dark">
                     <label htmlFor="message" className="form-label">
                       Message
                     </label>
@@ -105,7 +116,10 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <button type="submit" className="contact-btn  w-25">
+                  <button
+                    type="submit"
+                    className="contact-btn  w-25"                   
+                  >
                     Send Message
                   </button>
                 </form>

@@ -623,6 +623,7 @@ p {
 .blog-tittle ol{
   display: flex;
   gap: 1rem;
+ 
   
 }
 /* .blog-tittle::before{
@@ -632,4 +633,23 @@ p {
 } */
 .blog-tittle li{ 
   list-style-type: none;
+}
+
+.blog-tittle .BP::before{
+  content: "/";
+  padding-right: 6px;
+}
+
+/* THE COUNTER */
+.counter-container{ 
+  position: relative;
+  background-color: aliceblue;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap:35px;
+ 
+}
+.countbtn{
+ 
 }

@@ -1,13 +1,35 @@
 import Home from "./Home";
 import hero from "../assets/blog-post-1.webp";
-import { useState } from "react";
+import { use, useEffect, useMemo, useState } from "react";
 import 'boxicons';
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const [count, setcount] = useState(1);
-  const [color, setcolor] = useState("white");
+
+  // ODD/EVEN COLOR
+
+  const color = useMemo(() => {
+    return count % 2 === 0 ? "red" : "blue";
+  }, [count]);
+
+//   const [color, setcolor] = useState("white");
   
-  // DARK/LIGHT... MODE 
+  
+//   const navigate=useNavigate()
+//   const facotrial=useMemo(()=>{
+//     let result=1
+//     for(let i=1;i<=4;i++){
+//           result*=i
+//     }
+//     return result
+// },[])
+//   useEffect(()=>{
+//     alert("hi this is check")
+//     navigate('/')
+//   },[count])
+  
+//   DARK/LIGHT... MODE 
 // const theamchange = () => {
 //   if (color === "white") {
 //     setcolor("black")
@@ -17,23 +39,27 @@ const About = () => {
 //     document.body.style.backgroundColor ="white";
 //   }
 // };
-const [bgColor, setBgColor] = useState("white");
 
-const theamchange = () => {
-  if (bgColor === "white") {
-    setBgColor("black");
-    setcolor("white");
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
-  } else {
-    setBgColor("white");
-    setcolor("black");
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
-  }
-};
+// USESTATE THEME CHANGE
+// const [bgColor, setBgColor] = useState("white");
+
+// const theamchange = () => {
+//   if (bgColor === "white") {
+//     setBgColor("black");
+//     setcolor("white");
+//     document.body.style.backgroundColor = "black";
+//     document.body.style.color = "white";
+//   } else {
+//     setBgColor("white");
+//     setcolor("black");
+//     document.body.style.backgroundColor = "white";
+//     document.body.style.color = "black";
+//   }
+// };
 
 
+// USEEFFECT MODECHANGE
+ 
 
   return (
     <>
@@ -44,7 +70,7 @@ const theamchange = () => {
         image={hero}
         btntext={"Get started"}
       />
-      <div className="about-container">
+      <div className="about-container ">
         <h1 className=" ht text-center pt-5">About Us</h1>
         <section className="about">
           <div className="container-fluid p-5">
@@ -78,21 +104,25 @@ const theamchange = () => {
           </div>
         </section>
       </div>
-      <button onClick={() => setcount(count + 1)}>+</button>
-      <p>{count}</p>
-      <button onClick={() => setcount(count - 1)}>-</button>
-      <h1 style={{ color: color ==="white" ? "black" : "white" }}>my first website</h1>
+      <div className="counter-container p-5 d-flex">
+             
+      <button className="countbtn" onClick={() => setcount(count - 1)}>-</button>
+      <p style={{ color }}>{count}<b className="p-1"></b></p>
+       <button className="countbtn" onClick={() => setcount(count + 1) | setcolor()}>+</button>
+      </div>
+      
+      {/* <h1 style={{ color: color ==="white" ? "black" : "white" }}>my first website</h1> */}
 
-      <button>change color</button>
+      {/* <button>change color</button> */}
 
-      <button onClick={theamchange} className="mode">
+      {/* <button onClick={theamchange} className="mode">
         {
           color==="white"? <box-icon name='moon' type='solid' color='#ffffff' ></box-icon>:
            <box-icon name='sun' type='solid' color='#ffffff' ></box-icon>
         }
-
+  <p>{facotrial}</p>
  
-</button>
+</button> */}
 
     </>
   );
