@@ -63,7 +63,7 @@ const navigate = useNavigate();
 
             {/* Right Side: Contact Form */}
 
-            <div className=" form col-12 col-md-6">
+            <div className=" Cform col-12 col-md-6">
               <div className="form-container p-4 ">
                 <form onSubmit={handleSubmit}>
                   <div className="row">
