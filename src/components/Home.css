@@ -742,3 +742,53 @@ p {
   padding: 1.5rem;
   justify-items: left;
 }
+.search-bar, .recent-posts, .categories-container, .tag-container{
+  background-color: #f5f6f8;
+  padding: 2rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.search-bar h4::before,
+.recent-posts h5::before,
+.categories-container h5::before,
+.tag-container h5::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 25px;
+  background-color: #1eb0e5;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+ 
+}
+
+
+
+.categories-container li,
+ .tag-container li{
+  list-style-type: none;
+}
+.tagList {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  padding-left: 0; 
+  margin: 0;
+}
+
+.tagList li {
+  background-color: #eeeded;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+ 
+  font-size: 14px;
+  list-style-type: none;
+}
+.comment-date p{
+  font-size: 14px;
+  
+}

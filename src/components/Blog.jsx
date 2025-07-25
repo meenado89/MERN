@@ -20,9 +20,9 @@ const Blog = () => {
     }
   };
 
-  // useEffect(()=>{
-  //   looping()
-  // },[])
+  useEffect(()=>{
+    looping()
+  },[])
   return (
     <div className="blog-section">
       <section className="blog-Main">
@@ -55,6 +55,22 @@ const Blog = () => {
                       Dolorum optio tempore voluptas dignissimos cumque fuga qui
                       quibusdam quia
                     </h5>
+                    <div className="comment-date d-flex gap-3 pt-2">
+                      
+                        <p> 
+                          <box-icon name='user'size='xs' ></box-icon>
+                          John Doe
+                          </p>
+                      <p>
+                        <box-icon name='message-rounded-dots'size='xs'></box-icon>
+                         Comments (12)
+                         </p>
+                       <p>
+                        <box-icon name='time-five'size='xs'></box-icon>
+                             20 Jan 2025
+                       </p>
+                      
+                    </div>
                     <p className="BlogCard-text">
                       Similique neque nam consequuntur ad non maxime aliquam
                       quas. Quibusdam animi praesentium. Aliquam et laboriosam
@@ -76,6 +92,22 @@ const Blog = () => {
                     <h5 className="BlogCard-title">
                       Nisi magni odit consequatur autem nulla dolorem
                     </h5>
+                    <div className="comment-date d-flex gap-3 pt-2">
+                      
+                        <p> 
+                          <box-icon name='user'size='xs' ></box-icon>
+                          John Doe
+                          </p>
+                      <p>
+                        <box-icon name='message-rounded-dots'size='xs'></box-icon>
+                         Comments (12)
+                         </p>
+                       <p>
+                        <box-icon name='time-five'size='xs'></box-icon>
+                             20 Jan 2025
+                       </p>
+                      
+                    </div>
                     <p className="BlogCard-text">
                       Aut iste neque ut illum qui perspiciatis similique
                       recusandae non. Fugit autem dolorem labore omnis et. Eum
@@ -99,6 +131,22 @@ const Blog = () => {
                         Possimus soluta ut id suscipit ea ut. In quo quia et
                         soluta libero sit sint.
                       </h5>
+                      <div className="comment-date d-flex gap-3 pt-2">
+                      
+                        <p> 
+                          <box-icon name='user'size='xs' ></box-icon>
+                          John Doe
+                          </p>
+                      <p>
+                        <box-icon name='message-rounded-dots'size='xs'></box-icon>
+                         Comments (12)
+                         </p>
+                       <p>
+                        <box-icon name='time-five'size='xs'></box-icon>
+                             20 Jan 2025
+                       </p>
+                      
+                    </div>
                       <p className="BlogCard-text">
                         Incidunt voluptate sit temporibus aperiam. Quia vitae
                         aut sint ullam quis illum voluptatum et. Quo libero
@@ -122,6 +170,22 @@ const Blog = () => {
                       Non rem rerum nam cum quo minus. Dolor distinctio deleniti
                       explicabo eius exercitationem.
                     </h5>
+                    <div className="comment-date d-flex gap-3 pt-2">
+                      
+                        <p> 
+                          <box-icon name='user'size='xs' ></box-icon>
+                          John Doe
+                          </p>
+                      <p>
+                        <box-icon name='message-rounded-dots'size='xs'></box-icon>
+                         Comments (12)
+                         </p>
+                       <p>
+                        <box-icon name='time-five'size='xs'></box-icon>
+                             20 Jan 2025
+                       </p>
+                      
+                    </div>
                     <p className="BlogCard-text">
                       Aspernatur rerum perferendis et sint. Voluptates
                       cupiditate voluptas atque quae. Rem veritatis rerum enim
@@ -137,14 +201,16 @@ const Blog = () => {
             </div>
             {/* RIGHT SECTION */}
             <div className="col-4">
-              <div className="row">
+              <div className="row ">
                 <div className="container">
-                  <div className="search-bar">
-                    <label htmlFor="">search</label>
+                  {/* SEARCH */}
+                  <div className="search-bar mb-3">
+                    <h4>search</h4>
+                    <label htmlFor=""></label>
                     <input type="text" />
                   </div>
                   {/* RRECENT POSTS */}
-                  <div className="recent-posts">
+                  <div className="recent-posts mb-3">
                     <div className="post-heading">
                       <h5>Recent Posts</h5>
                     </div>
@@ -154,7 +220,7 @@ const Blog = () => {
                         <img src="" alt="" />
                       </div>
                       <div className="post-title">
-                        <h5>Random text</h5>
+                        <h6>Random text</h6>
                       </div>
                       <div className="date-year">
                         <p>jan 1 2025</p>
@@ -167,7 +233,7 @@ const Blog = () => {
                         <img src="" alt="" />
                       </div>
                       <div className="post-title">
-                        <h5>Random text</h5>
+                        <h6>Random text</h6>
                       </div>
                       <div className="date-year">
                         <p>jan 1 2025</p>
@@ -179,7 +245,7 @@ const Blog = () => {
                         <img src="" alt="" />
                       </div>
                       <div className="post-title">
-                        <h5>Random text</h5>
+                        <h6>Random text</h6>
                       </div>
                       <div className="date-year">
                         <p>jan 1 2025</p>
@@ -191,7 +257,7 @@ const Blog = () => {
                         <img src="" alt="" />
                       </div>
                       <div className="post-title">
-                        <h5>Random text</h5>
+                        <h6>Random text</h6>
                       </div>
                       <div className="date-year">
                         <p>jan 1 2025</p>
@@ -204,7 +270,7 @@ const Blog = () => {
                         <img src="" alt="" />
                       </div>
                       <div className="post-title">
-                        <h5>Random text</h5>
+                        <h6>Random text</h6>
                       </div>
                       <div className="date-year">
                         <p>jan 1 2025</p>
@@ -212,7 +278,7 @@ const Blog = () => {
                     </div>
                   </div>
                   {/* CATEGORIES */}
-                  <div className="categories-container">
+                  <div className="categories-container mb-3">
                     <div className="categories-heading">
                       <h5>Categories</h5>
                     </div>
@@ -239,6 +305,7 @@ const Blog = () => {
                       </ul>
                     </div>
                   </div>
+                  {/* TAGS */}
                   <div className="tag-container">
                     <div className="tag-heading">
                       <h5>Tags</h5>
