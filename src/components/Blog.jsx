@@ -102,7 +102,120 @@ const Blog = () => {
               </div>
             </div>
             {/* RIGHT SECTION */}
-            <div className="col-4"></div>
+            <div className="col-4">
+              <div className="row">
+                <div className="container">
+                  <div className="serch-bar">
+                    <label htmlFor="">serch</label>
+                    <input type="text" />
+                  </div>
+                  {/* RRECENT POSTS */}
+                  <div className="recent-posts">
+                    <div className="post-heading">
+                      <h5>Recent Posts</h5>
+                    </div>
+                    {/* post1 */}
+                    <div className="post">
+                      <div className="-post-img">
+                      <img src="" alt="" />                      
+                    </div>
+                    <div className="post-title">
+                      <h5>Random text</h5>
+                    </div>
+                    <div className="date-year">
+                      <p>jan 1 2025</p>
+                    </div>
+                    </div>
+
+                    {/* post2 */}
+                    <div className="post">
+                      <div className="-post-img">
+                      <img src="" alt="" />                      
+                    </div>
+                    <div className="post-title">
+                      <h5>Random text</h5>
+                    </div>
+                    <div className="date-year">
+                      <p>jan 1 2025</p>
+                    </div>
+                    </div>
+                    {/* post 3 */}
+                    <div className="post">
+                      <div className="-post-img">
+                      <img src="" alt="" />                      
+                    </div>
+                    <div className="post-title">
+                      <h5>Random text</h5>
+                    </div>
+                    <div className="date-year">
+                      <p>jan 1 2025</p>
+                    </div>
+                    </div>
+                    {/* post4 */}
+                    <div className="post">
+                      <div className="-post-img">
+                      <img src="" alt="" />                      
+                    </div>
+                    <div className="post-title">
+                      <h5>Random text</h5>
+                    </div>
+                    <div className="date-year">
+                      <p>jan 1 2025</p>
+                    </div>
+                    </div>
+
+                    {/* post 5 */}
+                    <div className="post">
+                      <div className="-post-img">
+                      <img src="" alt="" />                      
+                    </div>
+                    <div className="post-title">
+                      <h5>Random text</h5>
+                    </div>
+                    <div className="date-year">
+                      <p>jan 1 2025</p>
+                    </div>
+                    </div>
+                  </div>
+                  {/* CATEGORIES */}
+                  <div className="categories-container">
+                    <div className="categories-heading">
+                      <h5>Categories</h5>
+                    </div>
+                    <div className="categories-list">
+                      <ul>
+                        <li>General <span>(25)</span></li>
+                        <li>Lifestyle <span>(12)</span></li>
+                        <li>Travel <span>(05)</span></li>
+                        <li>Design <span>(22)</span></li>
+                        <li>Creative <span>(8)</span></li>
+                        <li>Education <span>(14)</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="tag-container">
+                    <div className="tag-heading">
+                      <h5>Tags</h5>
+                    </div>
+                    <div className="tags-list">
+                      <ul className="tagList d-flex">
+                        <li>App</li>
+                        <li>IT</li>
+                        <li>Business</li>
+                        <li>Mac</li>
+                        <li>Design</li>
+                        <li>Office</li>
+                        <li>Creative</li>
+                        <li>Studio</li>
+                        <li>Smart</li>
+                        <li>Tips</li>
+                        <li>Marketing</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
