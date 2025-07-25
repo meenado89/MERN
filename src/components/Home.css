@@ -717,3 +717,28 @@ p {
   top: 12px;
  }
  
+/* BLOG */
+.Bcard-body{
+  width: 22rem;
+  background-color: #ffffff;
+  height: 40rem;
+  box-shadow: 0 0 14px 0 rgba(128, 128, 128, 0.239);
+
+}
+#Blog-Img{
+  width: 100%;
+}
+
+.BlogCard-body h5{
+  color: #37517e;
+  font-weight: 700;
+ 
+}
+.BlogCard-body h5:hover{
+  color: #1eb0e5;
+}
+
+.BlogCard-body{
+  padding: 1.5rem;
+  justify-items: left;
+}

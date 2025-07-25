@@ -1,19 +1,23 @@
 import "./Home.css";
 // For Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Contact = () => {
   // ALERT+NAVIGATE
-const navigate = useNavigate();
+  const navigate = useNavigate();
+  const formRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message Sent");
-    navigate("/");
+    const form = new FormData(formRef.current);
+    const formData = {};
+    for (let [key, value] of form.entries()) {
+      formData[key] = value;
+    }
+    console.log(formData);
   };
- 
 
   return (
     <section className="addres-form ">
@@ -65,7 +69,7 @@ const navigate = useNavigate();
 
             <div className=" Cform col-12 col-md-6">
               <div className="form-container p-4 ">
-                <form onSubmit={handleSubmit}>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="mb-3 col-6 text-dark">
                       <label htmlFor="name-field" className="form-label">
@@ -116,10 +120,7 @@ const navigate = useNavigate();
                     ></textarea>
                   </div>
 
-                  <button
-                    type="submit"
-                    className="contact-btn  w-25"                   
-                  >
+                  <button type="submit" className="contact-btn  w-25">
                     Send Message
                   </button>
                 </form>

@@ -2,10 +2,27 @@ import "./Home.css";
 //For Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import "boxicons";
+import { useContext, useEffect } from "react";
+import blog1 from "../assets/blog-post-1.webp";
+import blog2 from "../assets/blog-post-2.webp";
+import blog3 from "../assets/blog-post-3.webp";
+import blog4 from "../assets/blog-post-4.webp";
 
 import { Link } from "react-router-dom";
+import { contextProvider } from "../Context/AuthProvider";
 
 const Blog = () => {
+  const { a } = useContext(contextProvider);
+
+  const looping = () => {
+    for (let i = 0; i <= a.length - 1; i++) {
+      console.log(a[i]);
+    }
+  };
+
+  // useEffect(()=>{
+  //   looping()
+  // },[])
   return (
     <div className="blog-section">
       <section className="blog-Main">
@@ -22,82 +39,99 @@ const Blog = () => {
 
       <div className="blog-container">
         <div className="container P-2">
-          <div className="row">
+          <div className="row mb-3">
             {/* LEFT SECTION */}
             <div className="col-8">
               {/* CARD container */}
               <div className="row">
-                <div className="col-6">
+                <div className="col-6 mb-3 card-mainbody">
                   {/* CARD 1 LEFT*/}
-                  <div className="card cardImage">
-                    <img src="" alt="" />
+                  <div className="Bcard-body">
+                    <div className="bcard cardImage">
+                    <img src={blog1} alt="blog-Img" id="Blog-Img" />
                   </div>
                   <div className="BlogCard-body">
-                    <h5 className="BlogCard-title">Blog Title</h5>
+                    <h5 className="BlogCard-title">
+                      Dolorum optio tempore voluptas dignissimos cumque fuga qui
+                      quibusdam quia
+                    </h5>
                     <p className="BlogCard-text">
-                      blog content Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptate dolorem expedita fuga! Ex
-                      minima praesentium ut eaque dolore facilis, ipsa deleniti.
-                      Accusamus voluptatibus amet veniam deserunt autem! Error,
-                      ducimus ab!
+                      Similique neque nam consequuntur ad non maxime aliquam
+                      quas. Quibusdam animi praesentium. Aliquam et laboriosam
+                      eius aut nostrum quidem aliquid dicta..
                     </p>
+                    <button className="Btn Blogbtn"> Read More</button>
                   </div>
-                  <button className="Btn Blogbtn"> Read More</button>
+                  
+                  </div>
                 </div>
 
                 {/* CARD 2 RIGHT */}
-                <div className="col-6">
-                  <div className="card cardImage">
-                    <img src="" alt="" />
+                <div className="col-6 mb-3 card-mainbody">
+                  <div className="Bcard-body">
+                    <div className="bcard cardImage">
+                    <img src={blog2} alt="blog-Img" id="Blog-Img" />
                   </div>
                   <div className="BlogCard-body">
-                    <h5 className="BlogCard-title">Blog Title</h5>
+                    <h5 className="BlogCard-title">
+                      Nisi magni odit consequatur autem nulla dolorem
+                    </h5>
                     <p className="BlogCard-text">
-                      blog content Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptate dolorem expedita fuga! Ex
-                      minima praesentium ut eaque dolore facilis, ipsa deleniti.
-                      Accusamus voluptatibus amet veniam deserunt autem! Error,
-                      ducimus ab!
+                      Aut iste neque ut illum qui perspiciatis similique
+                      recusandae non. Fugit autem dolorem labore omnis et. Eum
+                      temporibus fugiat voluptate enim tenetur sun
                     </p>
+                    <button className="Btn Blogbtn"> Read More</button>
                   </div>
-                  <button className="Btn Blogbtn"> Read More</button>
+                  
+                  </div>
                 </div>
 
                 {/* 2 */}
-                <div className="col-6">
+                <div className="col-6 mb-3 card-mainbody">
                   {/* CARD 1 LEFT*/}
-                  <div className="card cardImage">
-                    <img src="" alt="" />
+                  <div className="Bcard-body">
+                    <div className="bcard cardImage">
+                      <img src={blog3} alt="blog-Img" id="Blog-Img" />
+                    </div>
+                    <div className="BlogCard-body p-4">
+                      <h5 className="BlogCard-title">
+                        Possimus soluta ut id suscipit ea ut. In quo quia et
+                        soluta libero sit sint.
+                      </h5>
+                      <p className="BlogCard-text">
+                        Incidunt voluptate sit temporibus aperiam. Quia vitae
+                        aut sint ullam quis illum voluptatum et. Quo libero
+                        rerum voluptatem pariatur nam. Ad impedit qui officiis
+                        est
+                      </p>
+                       <button className="Btn Blogbtn"> Read More</button>
+                    </div>
+                   
                   </div>
-                  <div className="BlogCard-body">
-                    <h5 className="BlogCard-title">Blog Title</h5>
-                    <p className="BlogCard-text">
-                      blog content Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptate dolorem expedita fuga! Ex
-                      minima praesentium ut eaque dolore facilis, ipsa deleniti.
-                      Accusamus voluptatibus amet veniam deserunt autem! Error,
-                      ducimus ab!
-                    </p>
-                  </div>
-                  <button className="Btn Blogbtn"> Read More</button>
                 </div>
 
                 {/* CARD 2 RIGHT */}
-                <div className="col-6">
-                  <div className="card cardImage">
-                    <img src="" alt="" />
+                <div className="col-6 mb-3 card-mainbody">
+                  <div className="Bcard-body">
+                    <div className="bcard cardImage">
+                    <img src={blog4} alt="blog-Img" id="Blog-Img" />
                   </div>
                   <div className="BlogCard-body">
-                    <h5 className="BlogCard-title">Blog Title</h5>
+                    <h5 className="BlogCard-title">
+                      Non rem rerum nam cum quo minus. Dolor distinctio deleniti
+                      explicabo eius exercitationem.
+                    </h5>
                     <p className="BlogCard-text">
-                      blog content Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptate dolorem expedita fuga! Ex
-                      minima praesentium ut eaque dolore facilis, ipsa deleniti.
-                      Accusamus voluptatibus amet veniam deserunt autem! Error,
-                      ducimus ab!
+                      Aspernatur rerum perferendis et sint. Voluptates
+                      cupiditate voluptas atque quae. Rem veritatis rerum enim
+                      et autem. Saepe atque cum eligendi eaque iste omnis a qui.
+                      Quia sed sunt. Ea asperiores expedita
                     </p>
+                    <button className="Btn Blogbtn"> Read More</button>
                   </div>
-                  <button className="Btn Blogbtn"> Read More</button>
+                  
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,8 +139,8 @@ const Blog = () => {
             <div className="col-4">
               <div className="row">
                 <div className="container">
-                  <div className="serch-bar">
-                    <label htmlFor="">serch</label>
+                  <div className="search-bar">
+                    <label htmlFor="">search</label>
                     <input type="text" />
                   </div>
                   {/* RRECENT POSTS */}
@@ -117,64 +151,64 @@ const Blog = () => {
                     {/* post1 */}
                     <div className="post">
                       <div className="-post-img">
-                      <img src="" alt="" />                      
-                    </div>
-                    <div className="post-title">
-                      <h5>Random text</h5>
-                    </div>
-                    <div className="date-year">
-                      <p>jan 1 2025</p>
-                    </div>
+                        <img src="" alt="" />
+                      </div>
+                      <div className="post-title">
+                        <h5>Random text</h5>
+                      </div>
+                      <div className="date-year">
+                        <p>jan 1 2025</p>
+                      </div>
                     </div>
 
                     {/* post2 */}
                     <div className="post">
                       <div className="-post-img">
-                      <img src="" alt="" />                      
-                    </div>
-                    <div className="post-title">
-                      <h5>Random text</h5>
-                    </div>
-                    <div className="date-year">
-                      <p>jan 1 2025</p>
-                    </div>
+                        <img src="" alt="" />
+                      </div>
+                      <div className="post-title">
+                        <h5>Random text</h5>
+                      </div>
+                      <div className="date-year">
+                        <p>jan 1 2025</p>
+                      </div>
                     </div>
                     {/* post 3 */}
                     <div className="post">
                       <div className="-post-img">
-                      <img src="" alt="" />                      
-                    </div>
-                    <div className="post-title">
-                      <h5>Random text</h5>
-                    </div>
-                    <div className="date-year">
-                      <p>jan 1 2025</p>
-                    </div>
+                        <img src="" alt="" />
+                      </div>
+                      <div className="post-title">
+                        <h5>Random text</h5>
+                      </div>
+                      <div className="date-year">
+                        <p>jan 1 2025</p>
+                      </div>
                     </div>
                     {/* post4 */}
                     <div className="post">
                       <div className="-post-img">
-                      <img src="" alt="" />                      
-                    </div>
-                    <div className="post-title">
-                      <h5>Random text</h5>
-                    </div>
-                    <div className="date-year">
-                      <p>jan 1 2025</p>
-                    </div>
+                        <img src="" alt="" />
+                      </div>
+                      <div className="post-title">
+                        <h5>Random text</h5>
+                      </div>
+                      <div className="date-year">
+                        <p>jan 1 2025</p>
+                      </div>
                     </div>
 
                     {/* post 5 */}
                     <div className="post">
                       <div className="-post-img">
-                      <img src="" alt="" />                      
-                    </div>
-                    <div className="post-title">
-                      <h5>Random text</h5>
-                    </div>
-                    <div className="date-year">
-                      <p>jan 1 2025</p>
-                    </div>
+                        <img src="" alt="" />
+                      </div>
+                      <div className="post-title">
+                        <h5>Random text</h5>
+                      </div>
+                      <div className="date-year">
+                        <p>jan 1 2025</p>
+                      </div>
                     </div>
                   </div>
                   {/* CATEGORIES */}
@@ -184,12 +218,24 @@ const Blog = () => {
                     </div>
                     <div className="categories-list">
                       <ul>
-                        <li>General <span>(25)</span></li>
-                        <li>Lifestyle <span>(12)</span></li>
-                        <li>Travel <span>(05)</span></li>
-                        <li>Design <span>(22)</span></li>
-                        <li>Creative <span>(8)</span></li>
-                        <li>Education <span>(14)</span></li>
+                        <li>
+                          General <span>(25)</span>
+                        </li>
+                        <li>
+                          Lifestyle <span>(12)</span>
+                        </li>
+                        <li>
+                          Travel <span>(05)</span>
+                        </li>
+                        <li>
+                          Design <span>(22)</span>
+                        </li>
+                        <li>
+                          Creative <span>(8)</span>
+                        </li>
+                        <li>
+                          Education <span>(14)</span>
+                        </li>
                       </ul>
                     </div>
                   </div>
