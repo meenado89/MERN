@@ -6,15 +6,33 @@ import "boxicons";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import {Link} from 'react-router-dom'
 // usestate
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = (props) => {
  const [showPass, setShowPass] = useState(false);
+const navigate = useNavigate();
 
   const togglePass = (e) => {
     e.preventDefault(); 
     setShowPass((prev) => !prev);
   };
+
+  const formRef = useRef();
+  const handleSubmit =(e) =>{
+    e.preventDefault();
+   alert ( "Log In Successful")
+   const form = new FormData(formRef.current);
+    const formData = {};
+    for (let [key, value] of form.entries()) {
+      formData[key] = value;
+     
+    }
+    console.log(formData);
+     navigate ("/Blog");
+  }
+   
+  
   return (
     <div>
       <section className="hero">
@@ -36,7 +54,7 @@ const Home = (props) => {
       <section className="SignIn">
         <div className="container">
           <div className="form-container">
-            <form>
+            <form onSubmit={handleSubmit} ref={formRef} >
               <div className="row">
                 <div className="mb-3 col-6">
                   <label htmlFor="email-field" className="form-label">
