@@ -89,7 +89,7 @@ const navigate = useNavigate();
                 </div>
 
                 <button type="submit" className="contact-btn  w-25">
-                  Send Message
+                  <h6>Log In</h6>
                 </button>
               </div>
             </form>
