@@ -721,7 +721,7 @@ p {
 .Bcard-body{
   width: 22rem;
   background-color: #ffffff;
-  height: 40rem;
+  height:38rem;
   box-shadow: 0 0 14px 0 rgba(128, 128, 128, 0.239);
 
 }
@@ -789,6 +789,18 @@ p {
   list-style-type: none;
 }
 .comment-date p{
-  font-size: 14px;
-  
+  font-size: 14px;  
+}
+
+.BlogCard-text{
+  font-size: 16px;
+  color: black;
+}
+.Blogbtn{
+  background-color:#3fb0d9;
+  border:none;
+  padding: 0.6rem;
+  width: 8rem;
+  border-radius: 5px;
+  color: white;
 }

@@ -192,7 +192,7 @@ const Blog = () => {
                       et autem. Saepe atque cum eligendi eaque iste omnis a qui.
                       Quia sed sunt. Ea asperiores expedita
                     </p>
-                    <button className="Btn Blogbtn"> Read More</button>
+                    <button className="Blogbtn"> Read More</button>
                   </div>
                   
                   </div>
