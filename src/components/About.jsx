@@ -81,13 +81,17 @@ const About = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <ul>
-                  <li>
+                  <li className="li-icon d-flex">
+                    <box-icon name='check-circle' color='#40c0ef' ></box-icon>
                     Ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </li>
-                  <li>
+                  <li className="li-icon d-flex">
+                    <box-icon name='check-circle' color='#40c0ef' ></box-icon>
                     Duis aute irure dolor in reprehenderit in voluptate velit.
                   </li>
-                  <li>Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                  <li className="li-icon d-flex">
+                    <box-icon name='check-circle' color='#40c0ef' ></box-icon>
+                    Ullamco laboris nisi ut aliquip ex ea commodo</li>
                 </ul>
               </div>
               <div className="Ht-b col-lg-6 col-md-4 col-12">
