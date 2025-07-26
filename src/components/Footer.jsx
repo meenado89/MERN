@@ -9,7 +9,7 @@ const Footer = () => {
       {/* TOP FOOTER */}
 
       <footer>
-        <header className="news-letter">
+        <header className="news-letter ">
           <div className="heading-footer text-center">
             <p className="footer-heading">Join Our Newsletter</p>
             <span>
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div className="sub-container">
             <form>
-              <div className="Nmail">
+              <div className="Nmail d-flex ">
                 <label htmlFor="email-field" className="form-label"></label>
                 <input
                   type="email"
@@ -27,10 +27,11 @@ const Footer = () => {
                   name="email"
                   className="form-control"
                 />
-              </div>
-              <div className="sub-btn">
+                <div className="sub-btn ">
                 <button className="News-sub">Subscribe</button>
               </div>
+              </div>
+              
             </form>
           </div>
         </header>

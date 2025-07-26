@@ -678,7 +678,7 @@ p {
   margin-left: 2rem;
   
 }
- /* FOOTER */
+ /* TOP FOOTER */
  footer{
   background-color: #f5f6f8;
   padding-top: 2rem;
@@ -710,12 +710,20 @@ p {
   border: none;
   padding-left: 1rem;
   padding-right: 1rem;
-  border-radius: 25px;
- }
+  border-radius: 5px;
+  font-weight: 600;
+}
  
- .News-sub{
-  top: 12px;
- }
+ .Nmail{
+ margin-top: 2rem;
+ width: 550px;
+ justify-items: center;
+ 
+}
+.sub-btn{
+ position: relative;
+ right: 12px;
+}
  
 /* BLOG */
 .Bcard-body{
