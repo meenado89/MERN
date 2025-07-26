@@ -18,17 +18,17 @@ import { Link } from "react-router-dom";
 import { contextProvider } from "../Context/AuthProvider";
 
 const Blog = () => {
-  const { a } = useContext(contextProvider);
+  // const { a } = useContext(contextProvider);
 
-  const looping = () => {
-    for (let i = 0; i <= a.length - 1; i++) {
-      console.log(a[i]);
-    }
-  };
+  // const looping = () => {
+  //   for (let i = 0; i <= a.length - 1; i++) {
+  //     console.log(a[i]);
+  //   }
+  // };
 
-  useEffect(() => {
-    looping();
-  }, []);
+  // useEffect(() => {
+  //   looping();
+  // }, []);
   return (
     <div className="blog-section">
       <section className="blog-Main">
@@ -339,33 +339,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <footer>
-        <header className="news-letter">
-          <div className="heading-footer text-center">
-            <p className="footer-heading">Join Our Newsletter</p>
-            <span>
-              Subscribe to our newsletter and receive the latest news about our
-              products and services!
-            </span>
-          </div>
-          <div className="sub-container">
-            <form>
-              <div className="Nmail">
-                <label htmlFor="email-field" className="form-label"></label>
-                <input
-                  type="email"
-                  id="email-field"
-                  name="email"
-                  className="form-control"
-                />
-              </div>
-              <div className="sub-btn">
-                <button className="News-sub">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </header>
-      </footer>
+      
     </div>
   );
 };
