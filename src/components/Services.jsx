@@ -11,7 +11,9 @@ const Services = () => {
         <div className="grid-container">
           {/* CARD 1 */}
           <div className="service-card">
-            <div className="main-icon">add icon</div>
+            <div className="main-icon">
+              <box-icon name='shape-polygon'color='#40c0ef'size='lg' ></box-icon>
+            </div>
             <div className="sevice-heading">
               <h4><b>Lorem Ipsum</b></h4>
             </div>
@@ -22,7 +24,9 @@ const Services = () => {
           </div>
           {/* CARD 2 */}
           <div className="service-card">
-            <div className="main-icon">add icon</div>
+            <div className="main-icon">
+              <box-icon name='shape-square' color='#40c0ef'size='lg' ></box-icon>
+            </div>
             <div className="sevice-heading">
               <h4><b>Lorem Ipsum</b></h4>
             </div>
@@ -33,7 +37,9 @@ const Services = () => {
           </div>
           {/* CARD 3 */}
           <div className="service-card">
-            <div className="main-icon">add icon</div>
+            <div className="main-icon">
+              <box-icon name='calendar' color='#40c0ef'size='lg' ></box-icon>
+            </div>
             <div className="sevice-heading">
               <h4><b>Lorem Ipsum</b></h4>
             </div>
@@ -44,7 +50,9 @@ const Services = () => {
           </div>
           {/* CARD 4 */}
           <div className="service-card">
-            <div className="main-icon">add icon</div>
+            <div className="main-icon">
+              <box-icon name='station'color='#40c0ef'size='lg' ></box-icon>
+            </div>
             <div className="sevice-heading">
               <h4><b>Lorem Ipsum</b></h4>
             </div>
