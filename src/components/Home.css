@@ -260,8 +260,13 @@ a:hover {
   margin-left: 4rem;
   top: 1.5rem;
   right: 4rem;
-  width: 9rem;
+  width:10rem;
 
+}
+#about-arrow{
+  position: relative;
+  left:6px;
+  top:4px;
 }
 
 .about-btn:hover {

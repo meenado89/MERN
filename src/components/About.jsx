@@ -102,7 +102,9 @@ const About = () => {
                   occaecat cupidatat non proident, sunt in culpa qui officia
                   deserunt mollit anim id est laborum.
                 </p>
-                <button className="about-btn">Read More</button>
+                <button className="about-btn d-flex">Read More
+                  <box-icon name='arrow-back' rotate='180'color='#40c0ef'id='about-arrow' ></box-icon>
+                </button>
               </div>
             </div>
           </div>
